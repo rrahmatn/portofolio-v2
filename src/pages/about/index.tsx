@@ -6,6 +6,7 @@ import Education from "../../assets/json/education.json"
 import { FaHandsClapping, FaHtml5, FaCss3Alt, } from "react-icons/fa6";
 import { SiTypescript, SiJavascript, SiTailwindcss, SiBootstrap, SiMui, SiDaisyui, SiNextdotjs, SiReact, SiReactrouter, SiVite } from "react-icons/si";
 import Parallax from '../../components/parallax';
+import Parallax2 from '../../components/parallax2';
 
 const About: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
@@ -19,9 +20,9 @@ const About: React.FC = () => {
     }
   };
 
-  const display = (currentIndex * 20 ) + 20;
+  const display = (currentIndex * 20) + 20;
 
- 
+
   return (
     <>
       <Layout>
@@ -30,8 +31,9 @@ const About: React.FC = () => {
             <div className="hero-overlay w-screen bg-opacity-40"></div>
             <div className="hero-content h-full flex-col-reverse pt-20 p-0 w-full md:items-end md:justify-between z-20 md:px-2 md:flex-row-reverse ">
               <div className=" max-w-[260px] md:max-w-sm max-h-xs z-20 bg-cover -mt-8 md:-mt-0 bg-center flex justify-center items-center bg-blend-darken overflow-visible">
-                <img src="/asets/img/about/almet.png" className="max-w-xs md:max-w-md z-20 rounded-lg shadow-md" />
+                <img src="/asets/img/about/almet.png" className="max-w-xs md:max-w-md z-20" />
               </div>
+                <Parallax2/>
               <div>
                 <div className="chat chat-start w-full md:w-auto gap-2 p-2 "  >
                   <div className="chat-image avatar ">
@@ -54,7 +56,7 @@ const About: React.FC = () => {
                   }
                   )}
                 </div>
-             </div>
+              </div>
             </div>
           </div>
           <div className="w-screen flex flex-col-reverse overflow-hidden md:flex-row-reverse h-fit  px-2 md:px-3 py-1 gap-1">
@@ -76,7 +78,7 @@ const About: React.FC = () => {
                   </>
                 )
               })}
-              <Parallax/>
+              <Parallax />
             </div>
             <section className="mockup-window z-20 w-full h-fit border bg-base-300">
               <div className="flex flex-col justify-start items-start px-4 py-5 bg-base-200 ">
@@ -152,7 +154,7 @@ const About: React.FC = () => {
                 <img
                   src={`/asets/img/about/education/${Education[currentIndex].picture ? Education[currentIndex].picture : '/asets/img/about/education/kuliah.png'}`}
                   alt="education"
-                  className="w-auto overflow-hidden h-60 md:h-80 mx-auto bg-base-300 bg-opacity-80 rounded-full shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] "
+                  className="w-auto overflow-hidden h-60 md:h-80 mx-auto bg-base-300 rounded-full shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] "
                 />
                 <h4 className="h3 font-bold h-16 drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)]">{Education[currentIndex].title}</h4>
                 <input
@@ -167,7 +169,7 @@ const About: React.FC = () => {
               </div>
             </div>
           </div>
-          
+
         </div>
       </Layout>
     </>
