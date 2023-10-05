@@ -25,7 +25,7 @@ const About: React.FC = () => {
   return (
     <>
       <Layout>
-        <div className="w-full h-fit flex flex-col overflow-x-hidden">
+        <div className="w-screen  h-fit flex flex-col overflow-hidden">
           <div className="hero  overflow-x-hidden min-h-screen w-full h-fit bg-fixed p-0 justify-center md:items-end overflow-hidden md:-mt-14 -mt-0" style={{ backgroundImage: ('url(/asets/img/about/cover.jpg)') }}>
             <div className="hero-overlay w-screen bg-opacity-40"></div>
             <div className="hero-content h-full flex-col-reverse pt-20 p-0 w-full md:items-end md:justify-between z-20 md:px-2 md:flex-row-reverse ">
@@ -57,7 +57,7 @@ const About: React.FC = () => {
              </div>
             </div>
           </div>
-          <div className="flex flex-col-reverse w-full md:flex-row-reverse h-fit  px-2 md:px-3 py-1 gap-1">
+          <div className="w-screen flex flex-col-reverse overflow-hidden md:flex-row-reverse h-fit  px-2 md:px-3 py-1 gap-1">
             <div className="artboard w-auto z-20 md:mr-3 md:w-[460px] bg-opacity-0 h-fit rounded-md bg-base-300 mx-auto flex-col p-2 gap-2">
               <span className='h4 font-medium flex flex-row gap-2 py-4'><h1 className='h2 font-extrabold'>#</h1> My Favorite Stack Tools</span>
               {Tools.map((item) => {

@@ -15,7 +15,7 @@ const Parallax: React.FC = () => {
         };
     }, []);
     return (
-        <div className="w-full  flex flex-col opacity-30 h-[1800px] md:h-[900px] md:-mt-96 -mt-[470px] z-0 md:py-20 items-center justify-center gap-10 overflow-x-hidden overflow-y-clip absolute ">
+        <div className="w-full  flex flex-col -ml-4 opacity-30 h-[1800px] md:h-[900px] md:-mt-96 -mt-[470px] z-0 md:py-20 items-center justify-center gap-10 overflow-x-hidden overflow-y-clip absolute ">
             <img src="/asets/img/polygon.png" alt="alt" className='w-20 h-fit md:-mr-96' style={{ transform: `translateX(${-scrollTop * 0.11}px) translateY(${scrollTop * 0.02}%) rotate(${scrollTop * 0.1}deg) scale(${scrollTop * 0.11}%)` }} />
             <div className="flex flex-row">
                 <img src="/asets/img/rectangle.png" alt="alt" className='w-20 h-fit md:-mr-96' style={{ transform: `translateX(${scrollTop * 0.21}px) translateY(${scrollTop * 0.30}%) rotate(${scrollTop * 0.2}deg) scale(${scrollTop * 0.21}%)` }} />
