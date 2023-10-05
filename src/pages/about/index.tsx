@@ -33,7 +33,7 @@ const About: React.FC = () => {
               <div className=" max-w-[260px] md:max-w-sm max-h-xs z-20 bg-cover -mt-8 md:-mt-0 bg-center flex justify-center items-center bg-blend-darken overflow-visible">
                 <img src="/asets/img/about/almet.png" className="max-w-xs md:max-w-md z-20" />
               </div>
-                <Parallax2/>
+
               <div>
                 <div className="chat chat-start w-full md:w-auto gap-2 p-2 "  >
                   <div className="chat-image avatar ">
@@ -46,7 +46,7 @@ const About: React.FC = () => {
                     return (
                       <>
                         <div className="chat-image avatar " key={index}>
-                          <div className="w-10 rounded-full shadow-2xl shadow-black ">
+                          <div className="w-10 rounded-full shadow-lg shadow-black ">
                             <img src="/asets/img/about/hero.jpg" />
                           </div>
                         </div>
@@ -59,6 +59,7 @@ const About: React.FC = () => {
               </div>
             </div>
           </div>
+          <Parallax2 />
           <div className="w-screen flex flex-col-reverse overflow-hidden md:flex-row-reverse h-fit  px-2 md:px-3 py-1 gap-1">
             <div className="artboard w-auto z-20 md:mr-3 md:w-[460px] bg-opacity-0 h-fit rounded-md bg-base-300 mx-auto flex-col p-2 gap-2">
               <span className='h4 font-medium flex flex-row gap-2 py-4'><h1 className='h2 font-extrabold'>#</h1> My Favorite Stack Tools</span>
@@ -78,8 +79,8 @@ const About: React.FC = () => {
                   </>
                 )
               })}
-              <Parallax />
             </div>
+            <Parallax />
             <section className="mockup-window z-20 w-full h-fit border bg-base-300">
               <div className="flex flex-col justify-start items-start px-4 py-5 bg-base-200 ">
                 <p className='p indent-9 text-justify'>I am a Front-End Engineer in Web Developer and also a student at the Sunan Gundung Djati State Islamic University, Bandung, majoring in Information Engineering, in January 2024 I will enter the final semester, with the concentration I am taking is Machine Learning, with JavaScript and TypeScript skills, I can use various types of frameworks, especially those on npmjs, including ReactJs, NextJs, TailwindCSS and many more, let me show you.</p>
@@ -149,21 +150,21 @@ const About: React.FC = () => {
           <div className="hero min-h-screen w-full bg-fixed" style={{ background: ('url(/asets/img/about/bg.jpg)'), backgroundAttachment: 'fixed', backgroundSize: "cover", backgroundPosition: "center" }}>
             <div className="hero-overlay bg-opacity-60 "></div>
             <div className="hero-content w-full h-full text-center items-center text-neutral-content">
-              <div className="max-w-full h-full bg-base-300 bg-opacity-30 shadow-lg items-center justify-center w-full md:w-1/2 gap-7 flex flex-col">
+              <div className="max-w-full h-full bg-base-300  bg-opacity-30 shadow-lg items-center justify-center w-full md:w-1/2 gap-7 flex flex-col">
                 <h3 className="h3 font-semibold drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)]">My Education</h3>
                 <img
                   src={`/asets/img/about/education/${Education[currentIndex].picture ? Education[currentIndex].picture : '/asets/img/about/education/kuliah.png'}`}
                   alt="education"
-                  className="w-auto overflow-hidden h-60 md:h-80 mx-auto bg-base-300 rounded-full shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] "
+                  className="w-auto overflow-hidden h-60 md:h-80 mx-auto z-10 bg-base-300 rounded-full shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] "
                 />
                 <h4 className="h3 font-bold h-16 drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)]">{Education[currentIndex].title}</h4>
                 <input
                   type="range"
                   min={0}
                   max={91}
-                  className="range range-primary justify-self-end drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)]"
+                  className="range range-primary z-20 justify-self-end drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)]"
                   onChange={handleInputChange}
-                  value={display ? display : 20}
+                  value={display}
                 />
                 <div className="w-full h-3 h5 items-center flex justify-center"> Swipe For More </div>
               </div>
