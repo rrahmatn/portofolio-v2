@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Layout from '../../components/layout';
 import Great from "../../assets/json/great.json";
 import Tools from "../../assets/json/tools.json";
@@ -18,29 +18,18 @@ const About: React.FC = () => {
       setCurrentIndex(newIndex);
     }
   };
-  const [scrollTop, setScrollTop] = useState<number>(0);
+
   const display = (currentIndex * 20 ) + 20;
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollTop(window.scrollY);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+ 
   return (
     <>
       <Layout>
         <div className="w-full h-fit flex flex-col overflow-x-hidden">
           <div className="hero  overflow-x-hidden min-h-screen w-full h-fit bg-fixed p-0 justify-center md:items-end overflow-hidden md:-mt-14 -mt-0" style={{ backgroundImage: ('url(/asets/img/about/cover.jpg)') }}>
             <div className="hero-overlay w-screen bg-opacity-40"></div>
-          
             <div className="hero-content h-full flex-col-reverse pt-20 p-0 w-full md:items-end md:justify-between z-20 md:px-2 md:flex-row-reverse ">
-              <div className=" max-w-[260px] md:max-w-sm max-h-xs z-20 bg-cover -mt-10 md:-mt-0 bg-center flex justify-center items-center bg-blend-darken overflow-visible">
+              <div className=" max-w-[260px] md:max-w-sm max-h-xs z-20 bg-cover -mt-8 md:-mt-0 bg-center flex justify-center items-center bg-blend-darken overflow-visible">
                 <img src="/asets/img/about/almet.png" className="max-w-xs md:max-w-md z-20 rounded-lg shadow-md" />
               </div>
               <div>
@@ -65,20 +54,10 @@ const About: React.FC = () => {
                   }
                   )}
                 </div>
-              </div>
+             </div>
             </div>
-            <Parallax/>
           </div>
           <div className="flex flex-col-reverse w-full md:flex-row-reverse h-fit  px-2 md:px-3 py-1 gap-1">
-            <figure className='w-full h-fit absolute -mx-2 flex flex-col items-start justify-start overflow-hidden opacity-25'>
-              <span className='w-full h-5 my-6 bg-orange-400 rounded-lg' style={{ translate: ((scrollTop - 500) * 2.1 + 'px') }}>.</span>
-              <span className='w-full h-5 my-0 bg-orange-400 rounded-lg' style={{ translate: ((-scrollTop - 700) * 0.4 + 'px') }}>.</span>
-              <span className='w-full h-5 my-2 bg-orange-400 rounded-lg' style={{ translate: ((-scrollTop - 900) * 0.7 + 'px') }}>.</span>
-              <span className='w-full h-5 mt-80 bg-orange-400 rounded-lg' style={{ translate: ((scrollTop + 500) * 0.6 + 'px') }}>.</span>
-              <span className='w-1/2 h-5 mt-9 bg-orange-400 rounded-lg' style={{ translate: ((-scrollTop - 1200) * 0.2 + 'px') }}>.</span>
-              <span className='w-1/2 right-0 h-5 mt-2 bg-orange-400 rounded-lg' style={{ translate: ((scrollTop - 1000) * 2.3 + 'px') }}>.</span>
-              <span className='w-full h-5 mt-6 bg-orange-400 rounded-lg' style={{ translate: ((-scrollTop + 1020) * 1.2 + 'px') }}>.</span>
-            </figure>
             <div className="artboard w-auto z-20 md:mr-3 md:w-[460px] bg-opacity-0 h-fit rounded-md bg-base-300 mx-auto flex-col p-2 gap-2">
               <span className='h4 font-medium flex flex-row gap-2 py-4'><h1 className='h2 font-extrabold'>#</h1> My Favorite Stack Tools</span>
               {Tools.map((item) => {
@@ -97,7 +76,7 @@ const About: React.FC = () => {
                   </>
                 )
               })}
-
+              <Parallax/>
             </div>
             <section className="mockup-window z-20 w-full h-fit border bg-base-300">
               <div className="flex flex-col justify-start items-start px-4 py-5 bg-base-200 ">
