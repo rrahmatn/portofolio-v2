@@ -26,7 +26,7 @@ const About: React.FC = () => {
     <>
       <Layout>
         <div className="w-screen  h-fit flex flex-col overflow-hidden">
-          <div className="hero  overflow-x-hidden min-h-screen w-full h-fit bg-fixed p-0 justify-center md:items-end overflow-hidden md:-mt-14 -mt-0" style={{ backgroundImage: ('url(/asets/img/about/cover.jpg)') }}>
+          <div className="hero  overflow-x-hidden min-h-screen w-full h-fit bg-fixed p-0 justify-center md:items-end overflow-hidden md:-mt-14 -mt-0 " >
             <div className="hero-overlay w-screen bg-opacity-40"></div>
             <div className="hero-content h-full flex-col-reverse pt-20 p-0 w-full md:items-end md:justify-between z-20 md:px-2 md:flex-row-reverse ">
               <div className=" max-w-[260px] md:max-w-sm max-h-xs z-20 bg-cover -mt-8 md:-mt-0 bg-center flex justify-center items-center bg-blend-darken overflow-visible">
