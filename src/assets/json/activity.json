@@ -1,0 +1,25 @@
+[
+    {
+        "id" : 1 ,
+        "title" : "Front End Developer internship",
+        "content" : "I am currently interning at a software factory or software house company in Bandung, namely the Sahaware Company."
+
+    },
+    {
+        "id" : 2 ,
+        "title" : "Looking for projects",
+        "content" : "I still receive projects regarding the digital sector, especially on websites, I have a team for this too."
+
+    },
+    {
+        "id" : 3 ,
+        "title" : "I am ready for the team",
+        "content" : "I can also be hired as a team member on a particular project, I can use my skills in using Git and GitHub."
+
+    },
+    {
+        "id" : 4 ,
+        "title" : "Still Learning",
+        "content" : "I still to learn and still to look for the most updated technology and frameworks in the field of web development"
+    }
+] 

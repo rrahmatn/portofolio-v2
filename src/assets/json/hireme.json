@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "title": "Communicative",
+    "description": "I am good at communication, both with the team and clients. During working hours my response to work is quite fast",
+    "picture": "1.png"
+  },
+  {
+    "id": 2,
+    "title": "Careful",
+    "description": "I am very careful in writing line by line of coding, because I hate fixing bugs, better think before compiling",
+    "picture": "2.png"
+  } ,
+  {
+    "id": 3,
+    "title": "Reliable",
+    "description": "As far as it is within my capabilities regarding this technology and the learning process is still in the same field, I am very worthy of being relied on.",
+    "picture": "3.png"
+  }
+
+]

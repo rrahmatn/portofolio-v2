@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "title": "Islamic Centre Cianjur Kindergarten",
+    "picture": "tk.png"
+  },
+  {
+    "id": 2,
+    "title": "State Elementary School 1 Gintung Cianjur",
+    "picture": "sd.png"
+  },
+  {
+    "id": 3,
+    "title": "State Junior High School 4 Cianjur",
+    "picture": "smp.png"
+  },
+  {
+    "id": 4,
+    "title": "State High School 2 Cianjur",
+    "picture": "sma.png"
+  },
+  {
+    "id": 5,
+    "title": "Sunan Gunung Djati State Islamic University Bandung",
+    "picture": "kuliah.png"
+  }
+]

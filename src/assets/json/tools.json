@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "title": "React + pure CSS + JavaScript",
+    "description": "The first time I entered the field of Front-End Developer, I was already used to pure CSS, with the advantage of coding being neater and more orderly, because the framework and styles have separate files."
+  },
+  {
+    "id": "2",
+    "title": "React + Tailwind + JavaScript",
+    "description": "With Tailwind in this stack, I can style a website page or application faster."
+  },
+  {
+    "id": "3",
+    "title": "React + Tailwind + Vite + TypeScript",
+    "description": "With Vite and Typescript, I can deploy more neatly and faster because the features are lighter than Vite's built-in."
+  },
+  {
+    "id": "4",
+    "title": "NextJs + Tailwind + TypeScript",
+    "description": "by using TypeScript and NextJS here I am able to make a more powerful website, because there are client side and server side features, here I can even optimize SEO better"
+  }
+]
