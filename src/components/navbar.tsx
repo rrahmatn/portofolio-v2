@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-7 h-7 font-bold stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
               </label>
             </div>
-            <NavLink to="/" className="btn btn-ghost justify-start normal-case flex-1 text-xl font-extrabold flex flex-row">
+            <NavLink to="/" onClick={()=> window.scrollTo(0, 0)} className="btn btn-ghost justify-start normal-case flex-1 text-xl font-extrabold flex flex-row">
               <div className="avatar min-[310px]:inline-flex hidden">
                 <div className="w-8 mx-1 rounded-full">
                   <img src="/asets/img/about/hero.jpg" />
@@ -33,9 +33,9 @@ const Navbar: React.FC = () => {
               </div>rrahmatn</NavLink>
             <div className="flex-none navbar-center  hidden lg:block">
               <ul className="menu menu-horizontal gap-7 text-md font-semibold">
-                <li><NavLink to="/about">About <ImProfile className="text-2xl font-bold" /></NavLink></li>
-                <li><NavLink to="/work">Work <BsJournalCode className="text-2xl font-bold" /></NavLink></li>
-                <li><NavLink to="/contact">Contact <RiContactsBook2Line className="text-2xl font-bold" /></NavLink></li>
+                <li><NavLink onClick={()=> window.scrollTo(0, 0)} to="/about">About <ImProfile className="text-2xl font-bold" /></NavLink></li>
+                <li><NavLink onClick={()=> window.scrollTo(0, 0)} to="/work">Work <BsJournalCode className="text-2xl font-bold" /></NavLink></li>
+                <li><NavLink onClick={()=> window.scrollTo(0, 0)} to="/contact">Contact <RiContactsBook2Line className="text-2xl font-bold" /></NavLink></li>
               </ul>
             </div>
             <div className="flex-end flex w-auto lg:w-1/3 justify-end">
@@ -51,9 +51,9 @@ const Navbar: React.FC = () => {
           <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
           <ul className="menu p-4 w-80 pt-[76px] min-h-full bg-base-300 shadow-xl text-xl flex flex-col justify-between ">
             <div className="w-full h-fit gap-3 flex flex-col">
-              <li><NavLink className="flex justify-between font-medium" to="/about">About <ImProfile className="text-2xl font-bold" /></NavLink></li>
-              <li><NavLink className="flex justify-between font-medium" to="/work">Work <BsJournalCode className="text-2xl font-bold" /></NavLink></li>
-              <li><NavLink className="flex justify-between font-medium" to="/contact">Contact <RiContactsBook2Line className="text-2xl font-bold" /></NavLink></li>
+              <li><NavLink onClick={()=> window.scrollTo(0, 0)} className="flex justify-between font-medium" to="/about">About <ImProfile className="text-2xl font-bold" /></NavLink></li>
+              <li><NavLink onClick={()=> window.scrollTo(0, 0)} className="flex justify-between font-medium" to="/work">Work <BsJournalCode className="text-2xl font-bold" /></NavLink></li>
+              <li><NavLink onClick={()=> window.scrollTo(0, 0)} className="flex justify-between font-medium" to="/contact">Contact <RiContactsBook2Line className="text-2xl font-bold" /></NavLink></li>
             </div>
             <li className='flex flex-row gap-2 justify-center w-full'>
               <NavLink to="https://instagram.com/rrahmatn_" target="_blank"><BiLogoInstagram className='text-3xl font-bold' /></NavLink>
