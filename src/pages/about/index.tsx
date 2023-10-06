@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Layout from '../../components/layout';
-import Great from "../../assets/json/great.json";
 import Tools from "../../assets/json/tools.json";
 import Education from "../../assets/json/education.json"
-import { FaHandsClapping, FaHtml5, FaCss3Alt, } from "react-icons/fa6";
-import { SiTypescript, SiJavascript, SiTailwindcss, SiBootstrap, SiMui, SiDaisyui, SiNextdotjs, SiReact, SiReactrouter, SiVite } from "react-icons/si";
+import { FaHtml5, FaCss3Alt, } from "react-icons/fa6";
+import { SiTypescript, SiJavascript,SiExpress, SiTailwindcss, SiBootstrap, SiMui, SiDaisyui, SiNextdotjs, SiReact, SiReactrouter, SiVite } from "react-icons/si";
 import Parallax from '../../components/parallax';
 import Parallax2 from '../../components/parallax2';
 
@@ -21,42 +20,38 @@ const About: React.FC = () => {
   };
 
   const display = (currentIndex * 20) + 20;
+  const [scrollTop, setScrollTop] = useState<number>(0);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollTop(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <>
       <Layout>
         <div className="w-screen  h-fit flex flex-col overflow-hidden">
-          <div className="hero  overflow-x-hidden min-h-screen w-full h-fit bg-fixed p-0 justify-center md:items-end overflow-hidden md:-mt-14 -mt-0 " >
+          <div className="hero md:h-screen overflow-x-hidden min-h-screen w-full h-fit bg-fixed p-0 justify-center md:items-center overflow-hidden md:pt-12 -mt-0 " >
             <div className="hero-overlay w-screen bg-opacity-40"></div>
-            <div className="hero-content h-full flex-col-reverse pt-20 p-0 w-full md:items-end md:justify-between z-20 md:px-2 md:flex-row-reverse ">
-              <div className=" max-w-[260px] md:max-w-sm max-h-xs z-20 bg-cover -mt-8 md:-mt-0 bg-center flex justify-center items-center bg-blend-darken overflow-visible">
-                <img src="/asets/img/about/almet.png" className="max-w-xs md:max-w-md z-20" />
+            <div className="hero-content h-full flex-col md:px-12 pt-40 px-3 justify-center w-full md:items-center md:justify-between z-20  md:flex-row-reverse ">
+              <div className="w-72 h-72 md:w-96 md:h-96 z-20 rounded-full bg-blend-darken bg-[#ac7c58] -mt-10 md:-mt-0 justify-center flex items-end  overflow-visible">
+                <img src="/asets/img/about/cover.png" className="w-[520px] absolute h-fit  z-20 rounded-b-full" />
+                <img src="/asets/img/ellipse.png" alt="png" className='z-10 w-24 relative -ml-20 mt-32  my-auto right-0' style={{ transform: `translateX(${scrollTop * 0.11}px) scale(${100 + scrollTop * 0.11}%)` }} />
+                <img src="/asets/img/polygon.png" alt="png" className='z-30 w-28  absolute   mb-12 my-auto  right-20' style={{ transform: `rotate(${25 + scrollTop * 1.2}deg)` }} />
+                <img src="/asets/img/ellipse2.png" alt="png" className='z-10 -mt-3 ml-8 -mr-2 w-40 my-auto relative right-0' style={{ transform: `translateX(${-scrollTop * 0.11}px) translateY(${scrollTop * 0.02}%) rotate(${11 + scrollTop * 0.22}deg) scale(${100 + scrollTop * 0.08}%)` }} />
               </div>
-
-              <div>
-                <div className="chat chat-start w-full md:w-auto gap-2 p-2 "  >
-                  <div className="chat-image avatar ">
-                    <div className="w-10 rounded-full shadow-2xl shadow-black " >
-                      <img src="/asets/img/about/hero.jpg" />
-                    </div>
-                  </div>
-                  <span className="chat-bubble h3 shadow-2xl shadow-black "> <h2 className='w-fit flex flex-row items-center gap-3'>Hello <FaHandsClapping /></h2></span>
-                  {Great.map((items: string, index: number) => {
-                    return (
-                      <>
-                        <div className="chat-image avatar " key={index}>
-                          <div className="w-10 rounded-full shadow-lg shadow-black ">
-                            <img src="/asets/img/about/hero.jpg" />
-                          </div>
-                        </div>
-                        <div className="chat-bubble h4 shadow-2xl shadow-black" >{items}</div>
-                      </>
-                    )
-                  }
-                  )}
-                </div>
-              </div>
+              <section className="max-w-xl pl-2 md:gap-3 gap-1 md:mx-0 mx-auto z-10 md:px-10 grid">
+                <h2 className=" h2 font-semibold drop-shadow-lg text-amber-600">Rizky Rahmat Nugraha</h2>
+                <h1 className='mb-3 h font-bold'>Front-End Developer</h1>
+                <summary className="mb-5 list-none drop-shadow-md md:px-0 pr-10 text-sm">I am a Front-End Engineer in Web Developer and also a student at the Sunan Gundung Djati State Islamic University, Bandung, majoring in Information Engineering, in January 2024 I will enter the final semester, with the concentration I am taking is Machine Learning, with JavaScript and TypeScript skills, I can use various types of frameworks, especially those on npmjs, including ReactJs, NextJs, TailwindCSS and many more, let me show you.</summary>
+              </section>
             </div>
           </div>
           <Parallax2 />
@@ -81,20 +76,24 @@ const About: React.FC = () => {
               })}
             </div>
             <Parallax />
-            <section className="mockup-window z-20 w-full h-fit border bg-base-300">
-              <div className="flex flex-col justify-start items-start px-4 py-5 bg-base-200 ">
-                <p className='p indent-9 text-justify'>I am a Front-End Engineer in Web Developer and also a student at the Sunan Gundung Djati State Islamic University, Bandung, majoring in Information Engineering, in January 2024 I will enter the final semester, with the concentration I am taking is Machine Learning, with JavaScript and TypeScript skills, I can use various types of frameworks, especially those on npmjs, including ReactJs, NextJs, TailwindCSS and many more, let me show you.</p>
-                <h4 className='h4 my-2 font-semibold'>My Skills:</h4>
-                <div className="w-full flex flex-row gap-x-14 md:gap-y-5 gap-y-3 flex-wrap">
+            <section className="mockup-window z-20 w-auto  h-fit border  bg-base-300">
+              <div className="flex flex-col justify-start items-start md:px-8 mx-auto px-4 py-5 bg-base-200 ">
+                <h4 className='h4 my-4 font-semibold'>My Skills:</h4>
+                <div className="w-full flex flex-row gap-x-20 md:gap-y-5 gap-y-3 flex-wrap">
                   <div className="flex flex-col flex-shrink-0">
-                    <h5 className='h5 mb-2'>Programing Language</h5>
-                    <span className="flex flex-row">
+                    <h5 className='h5 mb-2'>Basic</h5>
+                    <span className="grid grid-cols-3">
                       <span className="tooltip" data-tip="HTML5">
                         <button className="btn h1"><FaHtml5 /></button>
                       </span>
                       <span className="tooltip" data-tip="CSS">
                         <button className="btn h1"><FaCss3Alt /></button>
                       </span>
+                    </span>
+                  </div>
+                  <div className="flex flex-col flex-shrink-0">
+                    <h5 className='h5 mb-2'>Programing Language</h5>
+                    <span className="grid grid-cols-3">
                       <span className="tooltip" data-tip="JavaScript">
                         <button className="btn h1">< SiJavascript /></button>
                       </span>
@@ -105,7 +104,7 @@ const About: React.FC = () => {
                   </div>
                   <div className="flex flex-col flex-shrink-0">
                     <h5 className='h5 mb-2'>Styling Tools / Library</h5>
-                    <span className="grid grid-cols-4 ">
+                    <span className="grid grid-cols-3 ">
                       <span className="tooltip" data-tip="pure CSS">
                         <button className="btn h1"><FaCss3Alt /></button>
                       </span>
@@ -128,7 +127,7 @@ const About: React.FC = () => {
                   </div>
                   <div className="flex flex-col flex-shrink-0">
                     <h5 className='h5 mb-2'>Library and Framework</h5>
-                    <span className="flex flex-row">
+                    <span className="grid grid-cols-3">
                       <span className="tooltip" data-tip="ReactJS">
                         <button className="btn h1"><SiReact /></button>
                       </span>
@@ -141,9 +140,13 @@ const About: React.FC = () => {
                       <span className="tooltip" data-tip="React Router">
                         <button className="btn h1">< SiReactrouter /></button>
                       </span>
+                      <span className="tooltip" data-tip="ExpressJS">
+                        <button className="btn h1">< SiExpress /></button>
+                      </span>
                     </span>
                   </div>
                 </div>
+                <h3 className='h4 pl-3'>and others. </h3>
               </div>
             </section>
           </div>

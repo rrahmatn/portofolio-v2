@@ -40,7 +40,7 @@ const App: React.FC = () => {
 
   return (
     <>
-    <main data-theme={isDarkMode ? "winter" : "luxury"}>
+    <main data-theme={isDarkMode ? "winter" : "coffee"}>
       <RouterProvider router={router} /> 
     </main>
     </>

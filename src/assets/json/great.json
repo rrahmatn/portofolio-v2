@@ -1,1 +1,34 @@
-["i am Rizky Rahmat Nugraha" ,"a Front-End Developer and Informatics Engineering student" ,"what about u?","im here for u" , "let me show u , who i am"]
+[
+    {
+      "type": "great",
+      "options": [
+        {
+          "text": "want hire u",
+          "messages": ["thanks for believing in me", "let's chat privately, how do you want to contact me?"],
+          "userResponse": ["telegram", "email"]
+        },
+        {
+          "text": "just saying hello",
+          "messages": ["hello", "how r u?"],
+          "userResponse": ["im fine", "im fine, how about u?"]
+        },
+        {
+          "text": "im fine",
+          "messages": ["pleased to hear it"]
+        },
+        {
+          "text": "im fine , how about u?",
+          "messages": ["thanks for asking"]
+        },
+        {
+          "text": "telegram",
+          "messages": ["this my telegram", "https://t.me/rrahmatn"]
+        },
+        {
+          "text": "email",
+          "messages": ["this my email", "rizkyrahmat292@gmail.com"]
+        }
+      ]
+    }
+  ]
+  

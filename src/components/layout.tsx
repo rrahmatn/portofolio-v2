@@ -26,8 +26,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                         modalElement.showModal();
                     }
                 }}><AiFillMessage/></button>
-                <dialog id="my_modal_3" className="modal mx-auto md:ml-auto md:mr-4  h-screen m-0 p-0  w-fit">
-                    <div className="modal-box p-0 h-fit w-fit bg-opacity-0  m-0 overflow-hidden">
+                <dialog id="my_modal_3" className="modal mx-auto ml-auto mr-4  h-screen m-0 p-0  w-fit">
+                    <div className="modal-box p-0 h-fit w-fit bg-opacity-0 pl-auto pt-auto m-0 overflow-hidden">
                         <form method="dialog">
                             <button className="btn btn-sm btn-circle btn-ghost h-fit w-fit  absolute right-2 top-2"><AiFillCloseCircle className="text-5xl font-bold"/></button>
                         </form>

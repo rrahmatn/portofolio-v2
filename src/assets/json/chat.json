@@ -1,0 +1,66 @@
+{
+  "sambutan": [
+    "Haiii! Aku di sini untukmu, apa yang bisa saya bantu?",
+    "Selamat datang! Ada yang bisa saya bantu?",
+    "Halo! Bagaimana saya bisa membantu hari ini?"
+  ],
+  "percakapan": [
+    {
+      "pertanyaan": "Apakah kamu suka kucing atau anjing?",
+      "pilihan": [
+        {
+          "teks": "Saya suka kucing.",
+          "respon": [
+            "Saya juga suka kucing! Mereka begitu menggemaskan. Ada yang lain yang ingin kamu tanyakan?",
+            "Kucing lucu, bukan? Saya juga suka kucing. Ada pertanyaan lain yang ingin kamu ajukan?"
+          ]
+        },
+        {
+          "teks": "Saya suka anjing.",
+          "respon": [
+            "Ah, anjing juga hebat! Mereka setia dan menyenangkan. Ada pertanyaan lain yang ingin kamu ajukan?",
+            "Anjing adalah teman yang baik. Saya juga suka anjing. Ada yang lain yang ingin kamu tanyakan?"
+          ]
+        }
+      ]
+    },
+    {
+      "pertanyaan": "Apa hobi favoritmu?",
+      "pilihan": [
+        {
+          "teks": "Saya suka bermain musik.",
+          "respon": [
+            "Bagus! Apa jenis musik yang kamu mainkan? Saya suka mendengarkan musik juga.",
+            "Musik adalah cara yang bagus untuk bersantai. Apa alat musik yang kamu mainkan?"
+          ]
+        },
+        {
+          "teks": "Saya suka bersepeda.",
+          "respon": [
+            "Bersepeda adalah aktivitas yang sehat dan menyenangkan. Apakah kamu sering bersepeda?",
+            "Saya juga suka bersepeda! Apa jenis sepeda yang kamu miliki?"
+          ]
+        }
+      ]
+    },
+    {
+      "pertanyaan": "Mau tahu lebih banyak tentang saya?",
+      "pilihan": [
+        {
+          "teks": "Ya, ceritakan tentang dirimu.",
+          "respon": [
+            "Tentu! Saya adalah asisten virtual yang dirancang untuk membantu Anda dengan berbagai pertanyaan dan tugas. Ada yang spesifik yang ingin kamu ketahui?",
+            "Saya adalah program komputer yang dirancang untuk membantu. Ada yang ingin kamu tanyakan tentang saya?"
+          ]
+        },
+        {
+          "teks": "Tidak, saya sudah cukup tahu.",
+          "respon": [
+            "Oke, jika ada yang perlu kamu tanyakan nanti, jangan ragu untuk bertanya. Saya di sini untukmu!",
+            "Baiklah, jika kamu butuh bantuan lain nanti, jangan sungkan untuk bertanya. Saya siap membantu!"
+          ]
+        }
+      ]
+    }
+  ]
+}

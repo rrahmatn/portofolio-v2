@@ -10,6 +10,6 @@ export default {
   ],
   plugins: [diasyui , nextui],
   daisyui: {
-    themes: [ "winter" , "luxury"],
+    themes: [ "winter" , "coffee"],
   }
 }
