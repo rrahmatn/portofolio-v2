@@ -26,3 +26,12 @@ export interface ChatData {
         }[];
     }[];
 }
+export interface Project {
+    type: string;
+    project: {
+        title: string;
+        desc: string;
+        repo: string;
+        thumbnail: string;
+    }[];
+}

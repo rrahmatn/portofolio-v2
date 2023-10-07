@@ -14,7 +14,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
     return (
         <>
-            <div className="w-screen max-w-full overflow-x-hidden h-fit flex flex-col items-start justify-center">
+            <div className="w-screen max-w-full overflow-hidden h-fit flex flex-col items-start justify-center">
                 <Navbar />
                 <div className="w-full h-fit flex flex-col">
                     {children}

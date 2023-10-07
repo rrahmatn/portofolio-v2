@@ -1,0 +1,57 @@
+[
+    {
+        "type" : "website",
+        "project" : [
+            {
+                "title" : "Klinik Digital Beta",
+                "desc" : "project that I got at my internship",
+                "repo" : "https://github.com/rrahmatn/klinik-digital",
+                "thumbnail" : "klinik-digital.jpg"
+            },
+            {
+                "title" : "Portofolio V1",
+                "desc" : "My web portofolio first version",
+                "repo" : "https://github.com/rrahmatn/my-portofolio",
+                "thumbnail" : "my-portofolio.jpg"
+            },
+            {
+                "title" : "Link Tree",
+                "desc" : "Because Instagram can't accept domains from Vercell, I made this as a bridge to enter my portfolio website",
+                "repo" : "https://github.com/rrahmatn/rrahmatn.github.io",
+                "thumbnail" : "link-tree.jpg"
+            },
+            {
+                "title" : "KKN-15",
+                "desc" : "a simple website to present family activities for 40 days",
+                "repo" : "https://github.com/rrahmatn/kkn15",
+                "thumbnail" : "kkn.jpg"
+            },
+            {
+                "title" : "Desa Lebakwangi",
+                "desc" : "During my service I tried to create a village website, but there was minimal help from outside, so it was not followed up",
+                "repo" : "https://github.com/rrahmatn/desa-lebakwangi",
+                "thumbnail" : "desa-lebakwangi.jpg"
+            },
+            {
+                "title" : "Gajikuy (Front-end)",
+                "desc" : "a simple project for a stock system for drinks and food sold and a salary system with a bonus algorithm from sales.",
+                "repo" : "https://github.com/rrahmatn/gajikuy",
+                "thumbnail" : "gajikuy.jpg"
+            },
+            {
+                "title" : "Gajikuy (Back-end)",
+                "desc" : "a simple project for a stock system for drinks and food sold and a salary system with a bonus algorithm from sales.",
+                "repo" : "https://github.com/rrahmatn/gajikuy-backend",
+                "thumbnail" : "gajikuy.jpg"
+            }
+        ]
+    },
+    {
+        "type" : "aplication",
+        "project" : []
+    },
+    {
+        "type" : "web-design",
+        "project" : []
+    }
+]
