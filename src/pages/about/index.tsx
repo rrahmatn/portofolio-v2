@@ -190,26 +190,28 @@ const About: React.FC = () => {
           </div>
           <div className="w-full h-fit flex flex-col px-3 md:px-20 my-2">
             <span className='w-full px-2  h3 flex flex-row font-semibold my-4 items-center gap-1'> <b className='h2 font-bold'>#</b> Who/How do people think I am? </span>
-            {whosme.map((item: Whosme, index: number) => {
-              return (
-                <Link to={`https://instagram.com/${item.instagram}`} target="_blank" className="w-full  md:w-1/2 h-fit my-1 flex flex-col " key={index}>
-                  <div className="chat chat-start">
-                    <div className="chat-image avatar">
-                      <div className="w-10 rounded-full shadow-2xl overflow-hidden">
-                        <img src={`/asets/img/about/${item.gender === "female" ? "female.jpg" : "male.jpg"}`} />
+            <div className="w-full h-fit md:w-1/2 flex-col">
+
+              {whosme.map((item: Whosme, index: number) => {
+                return (
+                  <Link to={`https://instagram.com/${item.instagram}`} target="_blank" className="w-full my-2 " key={index}>
+                    <div className="chat chat-start">
+                      <div className="chat-image avatar">
+                        <div className="w-10 rounded-full shadow-2xl overflow-hidden">
+                          <img src={`/asets/img/about/${item.gender === "female" ? "female.jpg" : "male.jpg"}`} />
+                        </div>
                       </div>
+                      <div className="chat-header shadow-md font-semibold ">
+                        {item.name}
+                      </div>
+                      <div className="chat-bubble shadow-xl">{item.text}</div>
                     </div>
-                    <div className="chat-header shadow-md font-semibold ">
-                      {item.name}
-                    </div>
-                    <div className="chat-bubble shadow-xl">{item.text}</div>
-                  </div>
-                </Link>
+                  </Link>
 
-              )
-            })}
+                )
+              })}
 
-
+            </div>
             <div className="w-full px-2 h3 my-3 justify-center  flex flex-row items-center gap-2">want to judge who I am?</div>
             <Link to="https://t.me/rrahmatn" target="_blank" className="w-1/2 md:w-1/2 mx-auto justify-center border-2 border-current rounded-md px-2 h3 flex flex-row items-center gap-2" >Send Here </Link>
           </div>
