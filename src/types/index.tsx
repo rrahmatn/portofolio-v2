@@ -28,10 +28,17 @@ export interface ChatData {
 }
 export interface Project {
     type: string;
-    project: {
-        title: string;
-        desc: string;
-        repo: string;
-        thumbnail: string;
-    }[];
+    title: string;
+    desc: string;
+    repo: string;
+    thumbnail: string;
+
+}
+export interface Whosme {
+    
+       gender: string ;
+       name : string ;
+       instagram: string ;
+       text: string ; 
+      
 }

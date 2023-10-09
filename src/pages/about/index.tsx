@@ -3,9 +3,13 @@ import Layout from '../../components/layout';
 import Tools from "../../assets/json/tools.json";
 import Education from "../../assets/json/education.json"
 import { FaHtml5, FaCss3Alt, } from "react-icons/fa6";
-import { SiTypescript, SiJavascript,SiExpress, SiTailwindcss, SiBootstrap, SiMui, SiDaisyui, SiNextdotjs, SiReact, SiReactrouter, SiVite } from "react-icons/si";
+import { SiTypescript, SiJavascript, SiExpress, SiTailwindcss, SiBootstrap, SiMui, SiDaisyui, SiNextdotjs, SiReact, SiReactrouter, SiVite } from "react-icons/si";
+import { BsGithub, BsGit } from "react-icons/bs";
 import Parallax from '../../components/parallax';
 import Parallax2 from '../../components/parallax2';
+import { Link } from 'react-router-dom';
+import whosme from "../../assets/json/whosme.json";
+import { Whosme } from '../../types';
 
 const About: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
@@ -145,8 +149,19 @@ const About: React.FC = () => {
                       </span>
                     </span>
                   </div>
+                  <div className="flex flex-col flex-shrink-0">
+                    <h5 className='h5 mb-2'>Other</h5>
+                    <span className="grid grid-cols-3">
+                      <span className="tooltip" data-tip="Git">
+                        <button className="btn h1"><BsGithub /></button>
+                      </span>
+                      <span className="tooltip" data-tip="Git">
+                        <button className="btn h1"><BsGit /></button>
+                      </span>
+                    </span>
+                  </div>
                 </div>
-                <h3 className='h4 pl-3'>and others. </h3>
+                <h3 className='h4 pl-3 my-2'>and others. </h3>
               </div>
             </section>
           </div>
@@ -173,7 +188,31 @@ const About: React.FC = () => {
               </div>
             </div>
           </div>
+          <div className="w-full h-fit flex flex-col px-3 md:px-20 my-2">
+            <span className='w-full px-2  h3 flex flex-row font-semibold my-4 items-center gap-1'> <b className='h2 font-bold'>#</b> Who/How do people think I am? </span>
+            {whosme.map((item: Whosme, index: number) => {
+              return (
+                <Link to={`https://instagram.com/${item.instagram}`} target="_blank" className="w-full  md:w-1/2 h-fit my-1 flex flex-col " key={index}>
+                  <div className="chat chat-start">
+                    <div className="chat-image avatar">
+                      <div className="w-10 rounded-full shadow-2xl overflow-hidden">
+                        <img src={`/asets/img/about/${item.gender === "female" ? "female.jpg" : "male.jpg"}`} />
+                      </div>
+                    </div>
+                    <div className="chat-header shadow-md font-semibold ">
+                      {item.name}
+                    </div>
+                    <div className="chat-bubble shadow-xl">{item.text}</div>
+                  </div>
+                </Link>
 
+              )
+            })}
+
+
+            <div className="w-full px-2 h3 my-3 justify-center  flex flex-row items-center gap-2">want to judge who I am?</div>
+            <Link to="https://t.me/rrahmatn" target="_blank" className="w-1/2 md:w-1/2 mx-auto justify-center border-2 border-current rounded-md px-2 h3 flex flex-row items-center gap-2" >Send Here </Link>
+          </div>
         </div>
       </Layout>
     </>
