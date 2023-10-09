@@ -190,7 +190,7 @@ const About: React.FC = () => {
           </div>
           <div className="w-full h-fit flex flex-col px-3 md:px-20 my-2">
             <span className='w-full px-2  h3 flex flex-row font-semibold my-4 items-center gap-1'> <b className='h2 font-bold'>#</b> Who/How do people think I am? </span>
-            <div className="w-full h-fit md:w-1/2 flex-col">
+            <div className="w-full h-fit md:w-1/2 gap-2 flex-col">
               {whosme.map((item: Whosme, index: number) => {
                 return (
                   <Link to={`https://instagram.com/${item.instagram}`} target="_blank" className="w-full my-2 " key={index}>
