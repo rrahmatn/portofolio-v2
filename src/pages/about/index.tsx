@@ -191,7 +191,6 @@ const About: React.FC = () => {
           <div className="w-full h-fit flex flex-col px-3 md:px-20 my-2">
             <span className='w-full px-2  h3 flex flex-row font-semibold my-4 items-center gap-1'> <b className='h2 font-bold'>#</b> Who/How do people think I am? </span>
             <div className="w-full h-fit md:w-1/2 flex-col">
-
               {whosme.map((item: Whosme, index: number) => {
                 return (
                   <Link to={`https://instagram.com/${item.instagram}`} target="_blank" className="w-full my-2 " key={index}>
@@ -207,10 +206,8 @@ const About: React.FC = () => {
                       <div className="chat-bubble shadow-xl">{item.text}</div>
                     </div>
                   </Link>
-
                 )
               })}
-
             </div>
             <div className="w-full px-2 h3 my-3 justify-center  flex flex-row items-center gap-2">want to judge who I am?</div>
             <Link to="https://t.me/rrahmatn" target="_blank" className="w-1/2 md:w-1/2 mx-auto justify-center border-2 border-current rounded-md px-2 h3 flex flex-row items-center gap-2" >Send Here </Link>

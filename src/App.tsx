@@ -10,6 +10,7 @@ import { darkMode } from './components/state';
 import { useAtom } from 'jotai';
 import Contact from './pages/contacs';
 import Work from './pages/work';
+import NotFund from './pages/404';
 
 const App: React.FC = () => {
   const [isDarkMode] = useAtom(darkMode);
@@ -31,6 +32,10 @@ const App: React.FC = () => {
     {
       path: "/contact",
       element: <Contact />,
+    },
+    {
+      path: "*",
+      element : <NotFund/>
     }
   ]);
   useEffect(() => {
