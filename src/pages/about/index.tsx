@@ -200,7 +200,7 @@ const About: React.FC = () => {
                           <img src={`/asets/img/about/${item.gender === "female" ? "female.jpg" : "male.jpg"}`} />
                         </div>
                       </div>
-                      <div className="chat-header shadow-md font-semibold ">
+                      <div className="chat-header drop-shadow-md font-semibold ">
                         {item.name}
                       </div>
                       <div className="chat-bubble shadow-xl">{item.text}</div>
