@@ -17,6 +17,13 @@
         "instagram": "ghinaaai",
         "text": "Sometimes he's noisy and breaks the atmosphere, but sometimes he's quiet"
       },
+      
+      {
+        "gender": "male",
+        "name": "Tegar Levta Anggana",
+        "instagram": "tegar_anggana",
+        "text": "Rizky Rahmat is like a web wizard, super reliable and always cooking up fresh ideas in the web development cauldron. Plus, this guy's got an eagle eye for those web programming fundamentals! 🚀💻"
+      },
       {
         "gender": "female",
         "name": "Rannia Nurfaiza",
@@ -33,6 +40,7 @@
         "gender": "female",
         "name": "Ditta Haniyyah",
         "instagram": "dittahaniyyah",
-        "text": "humorous, cool according to the mood but not fun when chatting,but very bad for extrovert activities, sometimes annoying but if you have coding assignments it's great . Oh, there's one more feeling that I'm feeling right at the command post, I'm stopping"
+        "text": "humorous, cool according to the mood but not fun when chatting,but very bad for extrovert activities, sometimes annoying but if you have coding assignments it's great . Oh, there's one more feeling that I'm feeling right at the command post, but now is stopping"
       }
+      
 ]
