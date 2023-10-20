@@ -46,10 +46,10 @@ const About: React.FC = () => {
             <div className="hero-overlay w-screen bg-opacity-40"></div>
             <div className="hero-content h-full flex-col md:px-12 pt-40 px-3 justify-center w-full md:items-center md:justify-between z-20  md:flex-row-reverse ">
               <div className="w-72 h-72 md:w-96 md:h-96 z-20 rounded-full bg-blend-darken bg-[#ac7c58] -mt-10 md:-mt-0 justify-center flex items-end  overflow-visible">
-                <img src="/asets/img/about/cover.png" className="w-[520px] absolute h-fit  z-20 rounded-b-full" />
-                <img src="/asets/img/ellipse.png" alt="png" className='z-10 w-24 relative -ml-20 mt-32  my-auto right-0' style={{ transform: `translateX(${scrollTop * 0.11}px) scale(${100 + scrollTop * 0.11}%)` }} />
-                <img src="/asets/img/polygon.png" alt="png" className='z-30 w-28  absolute   mb-12 my-auto  right-20' style={{ transform: `rotate(${25 + scrollTop * 1.2}deg)` }} />
-                <img src="/asets/img/ellipse2.png" alt="png" className='z-10 -mt-3 ml-8 -mr-2 w-40 my-auto relative right-0' style={{ transform: `translateX(${-scrollTop * 0.11}px) translateY(${scrollTop * 0.02}%) rotate(${11 + scrollTop * 0.22}deg) scale(${100 + scrollTop * 0.08}%)` }} />
+                <img src="/asets/img/about/cover.png" alt="rrahmatn" className="w-[520px] absolute h-fit  z-20 rounded-b-full" />
+                <img src="/asets/img/ellipse.png" alt="rrahmatn" className='z-10 w-24 relative -ml-20 mt-32  my-auto right-0' style={{ transform: `translateX(${scrollTop * 0.11}px) scale(${100 + scrollTop * 0.11}%)` }} />
+                <img src="/asets/img/polygon.png" alt="rrahmatn" className='z-30 w-28  absolute   mb-12 my-auto  right-20' style={{ transform: `rotate(${25 + scrollTop * 1.2}deg)` }} />
+                <img src="/asets/img/ellipse2.png" alt="rrahmatn" className='z-10 -mt-3 ml-8 -mr-2 w-40 my-auto relative right-0' style={{ transform: `translateX(${-scrollTop * 0.11}px) translateY(${scrollTop * 0.02}%) rotate(${11 + scrollTop * 0.22}deg) scale(${100 + scrollTop * 0.08}%)` }} />
               </div>
               <section className="max-w-xl pl-2 md:gap-3 gap-1 md:mx-0 mx-auto z-10 md:px-10 grid">
                 <h2 className=" h2 font-semibold drop-shadow-lg text-amber-600">Rizky Rahmat Nugraha</h2>
