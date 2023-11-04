@@ -10,7 +10,7 @@ const Contact: React.FC = () => {
   return (
     <>
       <Layout>
-        <div className="w-full h-fit flex flex-wrap gap-4 md:pb-40 justify-center flex-row pt-24 px-4 pb-10">
+        <div className="w-full h-fit min-h-screen flex flex-wrap gap-4 md:pb-40 justify-center flex-row pt-24 px-4 pb-10">
           <Link to="mailto:rizkyrahmat292@gmail.com"
             target="_blank"
             rel="noopener noreferrer"

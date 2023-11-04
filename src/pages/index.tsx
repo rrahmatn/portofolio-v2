@@ -58,7 +58,7 @@ const Home: React.FC = () => {
                                     <li className="flex items-center"><BsFillCheckCircleFill className="text-xl mx-1 mr-3 flex-shrink-0" /> <p className="inline">Makes marketing management <b>easier</b>  , using a <b>Cashier System</b></p></li>
                                     <li className="flex items-center"><BsFillCheckCircleFill className="text-xl mx-1 mr-3 flex-shrink-0" /><p className="inline">Work as a <b>Team</b> or <b>Individually.</b> </p></li>
                                     <li className="flex items-center mx-8 font-medium">...........</li>
-                                    <li ><Link to="/about" className="flex font-bold mx-6">For More <HiCursorArrowRipple className="text-2xl" /></Link></li>
+                                    <li ><Link to="/about"  onClick={()=> window.scrollTo(0, 0)}  className="flex font-bold mx-6">For More <HiCursorArrowRipple className="text-2xl" /></Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -80,7 +80,7 @@ const Home: React.FC = () => {
                                     )
                                 })}
                             </div>
-                            <Link to="/work" preventScrollReset={true} relative="path" className="mx-auto my-5 link h4 underline-offset-4 "> Let me show you ... </Link>
+                            <Link to="/wrk" preventScrollReset={true}  onClick={()=> window.scrollTo(0, 0)}  relative="path" className="mx-auto my-5 link h4 underline-offset-4 "> Let me show you ... </Link>
                         </article>
                     </div>
                     <div className="w-full h-fit flex flex-col  items-enter justify-center">
