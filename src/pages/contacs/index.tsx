@@ -22,7 +22,7 @@ const Contact: React.FC = () => {
               <BiLogoGmail />
             </div>
           </Link>
-          <Link to="https://ngl.link/rrahmatn_"
+          <Link to="https://ngl.link/rrahmatn_30665"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full md:w-1/3  h-24 font-semibold hover:scale-110 md:hover:scale-105 active:scale-110  bg-transparent flex flex-row justify-between items-center px-7 text-[24px] ii  rounded-xl"
