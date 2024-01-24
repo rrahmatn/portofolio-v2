@@ -105,9 +105,9 @@ const About: React.FC = () => {
                 <h2 className=" h2 font-semibold drop-shadow-lg text-amber-600">
                   Rizky Rahmat Nugraha
                 </h2>
-                <h1 className="mb-3 h font-bold">Front-End Developer</h1>
+                <h1 className="mb-3 h font-bold">System Analyst / Fullstack Developer</h1>
                 <summary className="mb-5 list-none drop-shadow-md md:px-0 pr-10 text-sm">
-                  I am a Front-End Engineer in Web Developer and also a student
+                  I am a Fullstack & System analyst in Web Developer and also a student
                   at the Sunan Gundung Djati State Islamic University, Bandung,
                   majoring in Information Engineering, in January 2024 I will
                   enter the final semester, with the concentration I am taking
