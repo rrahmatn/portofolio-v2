@@ -1,44 +1,58 @@
 [
   {
     "type" : "website",
+    "title": "Biofarma - Updateimun",
+    "desc": "project that I got at my freelance in PT. Sahaware Teknologi Indonesia",
+    "repo": "https://updateimun.id",
+    "thumbnail": "updateimun.png",
+    "status" : true
+  },
+  {
+    "type" : "website",
     "title": "Klinik Digital Beta",
     "desc": "project that I got at my internship",
     "repo": "https://github.com/rrahmatn/klinik-digital",
-    "thumbnail": "klinik-digital.jpg"
+    "thumbnail": "klinik-digital.jpg",
+    "status" : false
   },
   {
     "type" : "website",
     "title": "Portofolio V1",
     "desc": "My web portofolio first version",
     "repo": "https://github.com/rrahmatn/my-portofolio",
-    "thumbnail": "portofoliov1.png"
+    "thumbnail": "portofoliov1.png",
+    "status" : false
   },
   {
     "type" : "website",
     "title": "KKN-15",
     "desc": "a simple website to present family activities for 40 days",
     "repo": "https://github.com/rrahmatn/kkn15",
-    "thumbnail": "kkn.jpg"
+    "thumbnail": "kkn.jpg",
+    "status" : false
   },
   {
     "type" : "website",
     "title": "Desa Lebakwangi",
     "desc": "During my service I tried to create a village website, but there was minimal help from outside, so it was not followed up",
     "repo": "https://github.com/rrahmatn/desa-lebakwangi",
-    "thumbnail": "desa-lebakwangi.png"
+    "thumbnail": "desa-lebakwangi.png",
+    "status" : false
   },
   {
     "type" : "website",
     "title": "Gajikuy (Front-end)",
     "desc": "a simple project for a stock system for drinks and food sold and a salary system with a bonus algorithm from sales.",
     "repo": "https://github.com/rrahmatn/gajikuy",
-    "thumbnail": "gajikuy.jpg"
+    "thumbnail": "gajikuy.jpg",
+    "status" : false
   },
   {
     "type" : "website",
     "title": "Gajikuy (Back-end)",
     "desc": "a simple project for a stock system for drinks and food sold and a salary system with a bonus algorithm from sales.",
     "repo": "https://github.com/rrahmatn/gajikuy-backend",
-    "thumbnail": "gajikuy.jpg"
+    "thumbnail": "gajikuy.jpg",
+    "status" : false
   }
 ]

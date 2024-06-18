@@ -18,5 +18,10 @@
     "id": "4",
     "title": "NextJs + Tailwind + TypeScript",
     "description": "by using TypeScript and NextJS here I am able to make a more powerful website, because there are client side and server side features, here I can even optimize SEO better"
+  },
+  {
+    "id": "5",
+    "title": "Nuxt.js + Tailwind + TypeScript",
+    "description": "Combining Nuxt.js with Tailwind and TypeScript allows for efficient development with server-side rendering capabilities and enhanced SEO optimization."
   }
 ]

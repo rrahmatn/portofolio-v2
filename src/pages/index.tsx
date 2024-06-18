@@ -37,7 +37,7 @@ const Home: React.FC = () => {
                             <div className="max-w-xl  md:gap-3 gap-1 z-10 md:px-10 grid">
                                 <h2 className=" h2 font-semibold drop-shadow-lg text-amber-600">Hi , I am Rahmat.</h2>
                                 <h1 className='mb-3 h font-bold'>System Analyst / Fullstack Developer</h1>
-                                <summary className="mb-5 list-none drop-shadow-md h5 md:px-0 pr-10 ">I am from Indonesia and I am a final semester student of <b className='text-green-600'>Informatics Engineering </b> at the <b className='text-green-600'>Islamic State University Sunan Gunung Djati Bandung</b> , I was a Front-End Developer for approximately 2 years.</summary>
+                                <summary className="mb-5 list-none drop-shadow-md h5 md:px-0 pr-10 ">I am from Indonesia and I am a final semester student of <b className='text-green-600'>Informatics Engineering </b> at the <b className='text-green-600'>Islamic State University Sunan Gunung Djati Bandung</b> , I was a Front-End Developer for approximately 3 years.</summary>
                                 <a href="#content1" className='w-fit'> <button className={`btn btn-primary  w-fit shadow-xl `} >More About Me</button></a>
                             </div>
                             <div className="w-screen h-full flex flex-col-reverse justify-between items-end py-10 absolute overflow-hidden">

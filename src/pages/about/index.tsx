@@ -22,6 +22,8 @@ import {
   SiReact,
   SiReactrouter,
   SiVite,
+  SiNuxtdotjs,
+  SiVuedotjs
 } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { BsGithub, BsGit } from "react-icons/bs";
@@ -225,6 +227,16 @@ const About: React.FC = () => {
                       <span className="tooltip" data-tip="ReactJS">
                         <button className="btn h1">
                           <SiReact />
+                        </button>
+                      </span>
+                      <span className="tooltip" data-tip="VueJs">
+                        <button className="btn h1">
+                        <SiVuedotjs />
+                        </button>
+                      </span>
+                      <span className="tooltip" data-tip="NuxtJs">
+                        <button className="btn h1">
+                        <SiNuxtdotjs />
                         </button>
                       </span>
                       <span className="tooltip" data-tip="NextJS">

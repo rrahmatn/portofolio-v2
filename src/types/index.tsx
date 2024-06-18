@@ -32,6 +32,7 @@ export interface Project {
     desc: string;
     repo: string;
     thumbnail: string;
+    status : boolean;
 
 }
 export interface Whosme {

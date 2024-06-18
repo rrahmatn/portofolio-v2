@@ -59,7 +59,7 @@ const Work: React.FC = () => {
                       <h2 className="card-title tracking-wider">{item.title}</h2>
                       <p className="line-clamp-4 text-sm">{item.desc}</p>
                       <div className="card-actions justify-end">
-                        <Link target="_blank" to={item.repo} className="btn btn-primary">View Repository</Link>
+                        <Link target="_blank" to={item.repo} className="btn btn-primary">{item.status ? "Visit" : "View Repository"}</Link>
                       </div>
                     </div>
                   </div>
