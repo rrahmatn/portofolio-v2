@@ -23,5 +23,15 @@
     "id": "5",
     "title": "Nuxt.js + Tailwind + TypeScript",
     "description": "Combining Nuxt.js with Tailwind and TypeScript allows for efficient development with server-side rendering capabilities and enhanced SEO optimization."
+  },
+  {
+    "id": "6",
+    "title": "NestJS + Prisma + TypeScript",
+    "description": "NestJS, combined with Prisma and TypeScript, offers a powerful full-stack framework with a modular architecture and type-safe database interactions. Prisma makes working with databases easier, while TypeScript enhances code reliability and maintainability."
+  },
+  {
+    "id": "7",
+    "title": "NestJS + TypeORM + TypeScript",
+    "description": "Using NestJS with TypeORM and TypeScript provides a robust full-stack solution with support for various databases. TypeORM simplifies database interaction with a flexible, type-safe ORM, while TypeScript ensures better scalability and maintainability."
   }
 ]

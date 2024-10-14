@@ -20,10 +20,10 @@ import {
   SiDaisyui,
   SiNextdotjs,
   SiReact,
-  SiReactrouter,
   SiVite,
   SiNuxtdotjs,
-  SiVuedotjs
+  SiVuedotjs,
+  SiTensorflow
 } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { BsGithub, BsGit } from "react-icons/bs";
@@ -33,6 +33,7 @@ import Parallax2 from "../../components/parallax2";
 import { Link } from "react-router-dom";
 import whosme from "../../assets/json/whosme.json";
 import { Whosme } from "../../types";
+import { FaPython } from "react-icons/fa";
 
 const About: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
@@ -107,16 +108,18 @@ const About: React.FC = () => {
                 <h2 className=" h2 font-semibold drop-shadow-lg text-amber-600">
                   Rizky Rahmat Nugraha
                 </h2>
-                <h1 className="mb-3 h font-bold">System Analyst / Fullstack Developer</h1>
+                <h1 className="mb-3 h font-bold">
+                  System Analyst / Fullstack Developer
+                </h1>
                 <summary className="mb-5 list-none drop-shadow-md md:px-0 pr-10 text-sm">
-                  I am a Fullstack & System analyst in Web Developer and also a student
-                  at the Sunan Gundung Djati State Islamic University, Bandung,
-                  majoring in Information Engineering, in January 2024 I will
-                  enter the final semester, with the concentration I am taking
-                  is Machine Learning, with JavaScript and TypeScript skills, I
-                  can use various types of frameworks, especially those on
-                  npmjs, including ReactJs, NextJs, TailwindCSS and many more,
-                  let me show you.
+                  I am a Fullstack & System analyst in Web Developer and also a
+                  student at the Sunan Gundung Djati State Islamic University,
+                  Bandung, majoring in Information Engineering, in January 2024
+                  I will enter the final semester, with the concentration I am
+                  taking is Machine Learning, with JavaScript and TypeScript
+                  skills, I can use various types of frameworks, especially
+                  those on npmjs, including ReactJs, NextJs, TailwindCSS and
+                  many more, let me show you.
                 </summary>
               </section>
             </div>
@@ -184,6 +187,11 @@ const About: React.FC = () => {
                           <FaGolang />
                         </button>
                       </span>
+                      <span className="tooltip" data-tip="Python">
+                        <button className="btn h1">
+                          <FaPython />
+                        </button>
+                      </span>
                     </span>
                   </div>
                   <div className="flex flex-col min-w-[270px] flex-shrink-0">
@@ -229,14 +237,15 @@ const About: React.FC = () => {
                           <SiReact />
                         </button>
                       </span>
+
                       <span className="tooltip" data-tip="VueJs">
                         <button className="btn h1">
-                        <SiVuedotjs />
+                          <SiVuedotjs />
                         </button>
                       </span>
                       <span className="tooltip" data-tip="NuxtJs">
                         <button className="btn h1">
-                        <SiNuxtdotjs />
+                          <SiNuxtdotjs />
                         </button>
                       </span>
                       <span className="tooltip" data-tip="NextJS">
@@ -244,15 +253,14 @@ const About: React.FC = () => {
                           <SiNextdotjs />
                         </button>
                       </span>
-
                       <span className="tooltip" data-tip="Svelte">
                         <button className="btn h1">
                           <SiSvelte />
                         </button>
                       </span>
-                      <span className="tooltip" data-tip="React Router">
+                      <span className="tooltip" data-tip="Tensorflow">
                         <button className="btn h1">
-                          <SiReactrouter />
+                          <SiTensorflow />
                         </button>
                       </span>
                     </span>
